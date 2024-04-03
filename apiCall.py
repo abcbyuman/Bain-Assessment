@@ -20,6 +20,8 @@ def extract_location_info(locations):
             "city": location["acf"]["locationHero"]["city"],
             "state": location["acf"]["locationHero"]["state"],
             "postalCode": location["acf"]["locationHero"]["zip"],
+            "lat": location["acf"]["locationHero"]["lat"],
+            "lng": location["acf"]["locationHero"]["lng"],
             "phoneNumber": location["acf"]["locationHero"]["phone"],
             "storeID": location["id"]
         }
@@ -38,7 +40,7 @@ print(f"Total number of store locations found: {len(location_info)}")
 
 #export json as csv
 csv_file_name = 'api_store_details.csv'
-fieldnames = ['locationName', 'streetAddress', 'city', 'state', 'postalCode', 'phoneNumber', 'storeID']
+fieldnames = ['locationName', 'streetAddress', 'city', 'state', 'postalCode', 'lat', 'lng', 'phoneNumber', 'storeID']
 
 with open(csv_file_name, mode='w', newline='', encoding='utf-8') as file:
     writer = csv.DictWriter(file, fieldnames=fieldnames)
