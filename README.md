@@ -1,4 +1,4 @@
-I was given 3 steps to accomplish:
+The 3 tasks I was given:
 -
 
 1. Extract the la Madeleine Restaurant locations from their “Locations” page using JavaScript or Python
