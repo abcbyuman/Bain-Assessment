@@ -47,4 +47,4 @@ with open(csv_file_name, mode='w', newline='', encoding='utf-8') as file:
     for location in location_info:
         writer.writerow(location)
 
-print(f"Data successfully written to {csv_file_name} in the Selenium directory")
+print(f"Data successfully written to {csv_file_name} in the current directory")

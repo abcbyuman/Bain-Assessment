@@ -2,10 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#I will be using the csv I made in apiCall.py rather than the one in scraping.py
+#reading in 2 df's from api data and google reviews data
 df1 = pd.read_csv('api_store_details.csv')
 df2 = pd.read_csv('technicalAssessment-GoogleReviews.csv')
 
-#reading in 2 df's from api data and google reviews data
+#debug
 print(df1.head())
 print(df2.head())
 
