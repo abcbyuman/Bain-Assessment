@@ -5,7 +5,7 @@ The 3 tasks I was given:
 2. Associate the locations with the provided Google Reviews
 3. Draft a single slide presentation highlighting any data-driven insights you have gleaned from the location data and reviews
 
-My Solution:
+My solution:
 -
 Step 1 is done 2 different ways:
 1) I first scraped the webpage as I was more comfortable doing that and wanted to make sure I had something to turn in. This was done in the 'scraping.py' file.
