@@ -5,6 +5,8 @@ I was given 3 steps to accomplish:
 2. Associate the locations with the provided Google Reviews
 3. Draft a single slide presentation highlighting any data-driven insights you have gleaned from the location data and reviews
 
+My Solution:
+-
 Step 1 is done 2 different ways
 1) I first scraped the webpage as I was more comfortable doing that and wanted to make sure I had something to turn in. This was done in the 'scraping.py' file.
 2) I then looked into working with the API. This ended up being faster, so I opted to use this file moving forward - 'apiCall.py'
