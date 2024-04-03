@@ -14,3 +14,4 @@ Step 1 is done 2 different ways:
 Step 2 is done in the 'dataAnalytics.py' file. It pulls in the csv generated from 'apiCall.py' and combines it with the google reviews info. Then I conduct some basic data visualization to gain some insights
 
 Step 3 can be accessed at the below link:
+https://docs.google.com/presentation/d/1TLHagNDSG8zDxUm_erJTPd3-UwKmcBudOVyxsQ9e0eM/edit?usp=sharing
