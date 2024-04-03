@@ -1,4 +1,5 @@
 I was given 3 steps to accomplish:
+-
 
 1. Extract the la Madeleine Restaurant locations from their “Locations” page using JavaScript or Python
 2. Associate the locations with the provided Google Reviews
