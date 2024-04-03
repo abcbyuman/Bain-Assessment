@@ -1,9 +1,9 @@
 I was given 3 steps to accomplish:
 -
 
-Step 1) Extract the la Madeleine Restaurant locations from their “Locations” page using JavaScript or Python
-Step 2) Associate the locations with the provided Google Reviews
-Step 3) Draft a single slide presentation highlighting any data-driven insights you have gleaned from the location data and reviews
+1. Extract the la Madeleine Restaurant locations from their “Locations” page using JavaScript or Python
+2. Associate the locations with the provided Google Reviews
+3. Draft a single slide presentation highlighting any data-driven insights you have gleaned from the location data and reviews
 
 My Solution:
 -
