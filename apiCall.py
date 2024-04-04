@@ -8,9 +8,11 @@ headers = {
 }
 response = requests.get(url, headers=headers)
 
+#saving response from api
 if response.status_code == 200:
     data = response.json()
 
+#getting all the headers I am interested in
 def extract_location_info(locations):
     extracted_info = []
     for location in locations:

@@ -24,9 +24,9 @@ driver = webdriver.Chrome(service=service)
 #go to lamadeleline webpage
 driver.get(f'https://lamadeleine.com/locations')
 
-#I use this time to manually zoom out on the map in browser (click the zoom out button on bottom right of page 8 times). This is needed to scrape ALL locations, not just the ones that show up as default
+#you made need to click refresh button, or clear cached data
+#I use the time paused below to manually zoom out on the map in browser (click the zoom out button on bottom right of page 8 times). This is needed to scrape ALL locations, not just the ones that show up as default view
 WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.locationlist__wrapper')))
-
 time.sleep(4)
 
 #saving handle of original window, for use later
@@ -95,7 +95,6 @@ for index in range(num_of_directions):
 
 #creating df from address scraping
 address_df = pd.DataFrame(all_addresses, columns=['streetAddress1', 'streetAddress2', 'cityStateZip'])
-print(address_df)
 
 #create store_details list
 store_details = [text.replace('\n', ', ') for text in elements_texts]
@@ -146,7 +145,7 @@ address_df.drop('streetAddress2', axis=1, inplace=True)
 #combine both dfs into 1
 scraping_df = pd.concat([store_details_df, address_df], axis=1)
 
-#uncomment below code to export as a csv
+#uncomment below code and adjust path to export as a csv
 # file_path = '/Users/austin/Documents/BainCSV/scraped.csv'
 # scraping_df.to_csv(file_path, index=False)
 # file_path

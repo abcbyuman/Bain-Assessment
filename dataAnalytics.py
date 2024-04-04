@@ -6,7 +6,7 @@ from shapely.geometry import Point
 from textblob import TextBlob
 
 #I will be using the csv I made in apiCall.py rather than the one in scraping.py
-#reading in 2 df's from api data and google reviews data
+#reading in 2 df's (api call data and google reviews data)
 df1 = pd.read_csv('api_store_details.csv')
 df2 = pd.read_csv('technicalAssessment-GoogleReviews.csv')
 
@@ -23,7 +23,7 @@ print(complete_df.head())
 
 
 
-#uncomment the block representing the graph you would like to view. You may uncomment all block simultaneously to view all visualizations. 
+#uncomment the block representing the graph you would like to view. You may uncomment all blocks simultaneously to view all visualizations. 
 
 
 
